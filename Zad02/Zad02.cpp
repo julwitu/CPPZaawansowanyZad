@@ -14,14 +14,24 @@
 void printNumbers(unsigned int i) {
     std::cout << i << " ";
 }
-struct lessThan50 {
-    void operator()() {
-        if (_value < 50) {
-            std::cout << _value;
+class PrintLessThan
+{
+public:
+    PrintLessThan(int bound)
+        : _bound(bound)
+    {}
+
+    void operator()(int value)
+    {
+        if (value < _bound)
+        {
+            std::cout << value << " ";
         }
     }
-    int _value;
+private:
+    int _bound;
 };
+
 
 bool moreThan4(int i) {
     if(i > 4) {
@@ -44,8 +54,8 @@ int main()
     std::for_each(numbers.begin(), numbers.end(), printNumbers);
     std::cout << std::endl << std::endl;
 
-    
-    std::for_each(numbers.begin(), numbers.end(), lessThan50());
+    std::cout << "Mniejsze niz 50: " << std::endl;
+    std::for_each(numbers.begin(), numbers.end(), PrintLessThan(50));
     std::cout << std::endl << std::endl;
 
     int moreThan4Counter = std::count_if(numbers.begin(), numbers.end(), moreThan4);
@@ -70,23 +80,23 @@ int main()
 
 
     std::cout << "Dzielnik liczby" << std::endl;
-    auto dividesBy = [numbers](int i) {
-        int divider = 5;
-        if (numbers[i-1] % divider == 0) {
-            std::cout << numbers[i-1] << std::endl;
+    int dzielnik = 5;
+    std::for_each(numbers.begin(), numbers.end(), [dzielnik](int i) {
+        if (i % dzielnik == 0) {
+            std::cout << i << " ";
         }
-    };
-    std::for_each(numbers.begin(), numbers.end(), dividesBy);
+    });
+    std::cout << std::endl;
 
     //    f) Zlicz sumê wszystkich liczb parzystych i zapisz j¹ do zmiennej lokalnej int sum;
- //   std::cout << "Licznik parzystych " << std::endl;
- //   auto evenCount= [&numbers](int i) {
- //       if (numbers[i-1] % 2 == 0) {
- //           return 1;
- //       }
- //       return 0;
- //   };
- //int evenCounter = std::count(numbers.begin(), numbers.end(), evenCount);
- //std::cout << "Liczby parzyste: " << evenCounter << std::endl;
+    std::cout << "Licznik parzystych " << std::endl;
+    int sum = 0;
+    std::for_each(numbers.begin(), numbers.end(), [&sum](int i) {
+        if (i % 2 == 0) {
+            sum += i;
+        }
+        });
+    std::cout << sum;
+ 
 }
 
