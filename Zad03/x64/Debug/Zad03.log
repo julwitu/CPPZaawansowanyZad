@@ -1,0 +1,4 @@
+﻿  Zad03.cpp
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zad03\Zad03.cpp(40,16): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zad03\Zad03.cpp(35): warning C4715: '<lambda_d13e98c8c66c7591e08a100235540f09>::operator()': not all control paths return a value
+  Zad03.vcxproj -> C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\x64\Debug\Zad03.exe
