@@ -37,7 +37,8 @@ int main()
     std::cout << std::endl << std::endl;
 
     //c) Usuñ z kontenera 0.
-    std::remove(numbers.begin(), numbers.end(), 0); 
+    auto it = std::remove(numbers.begin(), numbers.end(), 0); 
+    numbers.erase(it, numbers.end());
     std::cout << "After removing 0: ";
     std::for_each(numbers.begin(), numbers.end(), [](int i) {std::cout << i << " "; });   
     std::cout << std::endl << std::endl;
