@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zad2", "Zad2\Zad2.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zad3", "Zad3\Zad3.vcxproj", "{1772B214-0DA8-4EA0-86B2-26872E9F1C85}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Regex", "Regex\Regex.vcxproj", "{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{1772B214-0DA8-4EA0-86B2-26872E9F1C85}.Release|x64.Build.0 = Release|x64
 		{1772B214-0DA8-4EA0-86B2-26872E9F1C85}.Release|x86.ActiveCfg = Release|Win32
 		{1772B214-0DA8-4EA0-86B2-26872E9F1C85}.Release|x86.Build.0 = Release|Win32
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Debug|x64.ActiveCfg = Debug|x64
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Debug|x64.Build.0 = Debug|x64
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Debug|x86.ActiveCfg = Debug|Win32
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Debug|x86.Build.0 = Debug|Win32
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Release|x64.ActiveCfg = Release|x64
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Release|x64.Build.0 = Release|x64
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Release|x86.ActiveCfg = Release|Win32
+		{666FC871-4FA8-4EB0-8CCD-BE601C75CA20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

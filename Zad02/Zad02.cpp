@@ -11,6 +11,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <numeric>
+
 void printNumbers(unsigned int i) {
     std::cout << i << " ";
 }
@@ -97,6 +99,15 @@ int main()
         }
         });
     std::cout << sum;
+    auto sumEven = [](int a, int b) {
+        if (b % 2 = 0) {
+            return a + b;
+        }
+        else {
+            return a;
+        }
+    };
+    int sum2 = std::accumulate(numbers.begin(), numbers.end(), 0, sumEven);
  
 }
 
