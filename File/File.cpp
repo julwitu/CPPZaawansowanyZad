@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "File.hpp"
 #include <fstream>
 #include <string>
 #include <random>
 #include <algorithm>
 #include <numeric>
-std::vector <Employee> Employee::vectorEmpl;
+
 
 File::File(const std::string& fileName) : _fileName(fileName), _file1(fileName), _file2(fileName, std::ios::out | std::ios::app) {
-	if(_file1.is_open() && _file2.is_open()) {
+	if (_file1.is_open() && _file2.is_open()) {
 		std::cout << "Plik zostal poprawnie otwarty" << std::endl;
 	}
 	else {
-		std::cout << "Unexpected exception caught"<< std::endl;
+		std::cout << "Unexpected exception caught" << std::endl;
 	}
 }
 
@@ -22,10 +22,10 @@ File::~File()
 	_file2.close();
 }
 //zrobic template
-//*Wczytaj za pomoc¹ tej klasy te dane do wektora
+//*Wczytaj za pomocÂ¹ tej klasy te dane do wektora
 void File::readData()
 {
-	
+
 	std::vector <std::string> vector;
 	while (_file1.good() && !_file1.eof()) {
 		//std::string str1, str2;
@@ -43,12 +43,12 @@ void File::readData()
 }
 
 //zrobic template
-////*U¿yj klasy File do zapisania danych 10 pracowników
+////*UÂ¿yj klasy File do zapisania danych 10 pracownikÃ³w
 void File::saveData(Employee& empl)
 {
-		if (_file2.good()) {
-			_file2 << empl._name  << " " << empl._surname << " " << empl._salary << " " << empl._employeeNumber<< "\n";
-		}
+	if (_file2.good()) {
+		_file2 << empl._name << " " << empl._surname << " " << empl._salary << " " << empl._employeeNumber << "\n";
+	}
 }
 
 Employee::Employee(std::string name, std::string surname, int salary) : _name(name), _surname(surname), _salary(salary)

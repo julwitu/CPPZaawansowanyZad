@@ -21,7 +21,7 @@ class Employee;
 class File {
 private:
 	std::string _fileName;
-	std::ifstream _file1;
+	std::fstream _file1;
 	std::ofstream _file2;
 public:
 	File(const std::string& fileName);
@@ -34,6 +34,5 @@ class Employee {
 public:
 	std::string _name, _surname;
 	int _employeeNumber, _salary;
-	static std::vector <Employee> vectorEmpl;
 	Employee(std::string name, std::string surname, int salary);
 };

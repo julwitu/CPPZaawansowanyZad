@@ -13,7 +13,6 @@ int main() {
     Employee e3("Alicja", "Zielona", 7400);
     Employee e4("Piotr", "Malinowski", 3000);
     Employee e5("Tomasz", "Piotrowski", 4120);
-
     file.saveData(e1);
     file.saveData(e2);
     file.saveData(e3);
