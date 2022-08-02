@@ -5,47 +5,49 @@
 #include <random>
 #include <algorithm>
 #include <numeric>
+std::vector <Employee> Employee::vectorEmpl;
 
-File::File(const std::string& fileName) : _fileName(fileName)/*, _file(fileName)*/ {
-	std::fstream file(_fileName);
-	try {
-		file.is_open();
+File::File(const std::string& fileName) : _fileName(fileName), _file1(fileName), _file2(fileName, std::ios::out | std::ios::app) {
+	if(_file1.is_open() && _file2.is_open()) {
+		std::cout << "Plik zostal poprawnie otwarty" << std::endl;
 	}
-	catch (std::ios_base::failure& e) {
-		std::cout << "Unexpected exception caught: " << e.what() << std::endl;
+	else {
+		std::cout << "Unexpected exception caught"<< std::endl;
 	}
-}
-
-void File::printVector()
-{
-
 }
 
 File::~File()
 {
-	std::fstream file(_fileName);
-	file.close();
+	_file1.close();
+	_file2.close();
 }
 //zrobic template
 //*Wczytaj za pomoc¹ tej klasy te dane do wektora
-void File::readDataToVector(Employee& vector)
+void File::readData()
 {
-	std::ifstream _file(_fileName);
-	while (_file.good() && !_file.eof()) {
-		std::string str1, str2;
-		int int1, int2;
-		_file >> str1 >> str2 >> int1 >> int2;
-		std::cout << str1 << " " << str2 << " " << " " << int1 << " " << int2 << "\n";
+	
+	std::vector <std::string> vector;
+	while (_file1.good() && !_file1.eof()) {
+		//std::string str1, str2;
+		//int int1, int2;
+		//_file1 >> str1 >> str2 >> int1 >> int2;
+		std::string str;
+		std::getline(_file1, str);
+		vector.push_back(str);
 	}
+
+	std::for_each(vector.begin(), vector.end(),
+		[](std::string str) {std::cout << str << "\n"; });
+
+	//sort std::stoi str->int
 }
 
 //zrobic template
 ////*U¿yj klasy File do zapisania danych 10 pracowników
 void File::saveData(Employee& empl)
 {
-	std::ofstream _file(_fileName, std::ios::out | std::ios::app);
-		if (_file.good()) {
-			_file << empl._name  << " " << empl._surname << " " << empl._salary << " " << empl._employeeNumber<< "\n";
+		if (_file2.good()) {
+			_file2 << empl._name  << " " << empl._surname << " " << empl._salary << " " << empl._employeeNumber<< "\n";
 		}
 }
 

@@ -1,6 +1,4 @@
 ﻿  File.cpp
-C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\File\File.cpp(12,15): warning C4834: discarding return value of function with 'nodiscard' attribute
   main.cpp
-C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\File\main.cpp(23,10): error C2039: 'readData': is not a member of 'File'
-C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\File\File.hpp(23): message : see declaration of 'File'
   Generating Code...
+  File.vcxproj -> C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\x64\Debug\File.exe

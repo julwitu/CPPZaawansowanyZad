@@ -3,9 +3,7 @@
 #include <fstream>
 #include <vector>
 //Klasa File
-//* RAII
-//* c - tor przyjmujacy nazwê pliku, rzuca wyj¹tek gdy nie uda siê otwrzyc pliku
-//* d - tor zamyka plik
+
 //* Mile widziane funkjce szablonowe zapisuj¹ce / wczytj¹ce dowonly typ danych(wspieraj¹cy operator << >>)
 //* Zak³adamy, ze 1 linia pliku 1 wartoœæ(dane nie mog¹ zwieraæ bia³ych znaków)
 //* Zak³adamy, ¿e u¿ytkownik zna format pliku i bêdzie wczytywa³ ró¿ne typy wed³ug znanej sobie kolejnoœci
@@ -23,19 +21,19 @@ class Employee;
 class File {
 private:
 	std::string _fileName;
-	//std::fstream _file(_fileName);
+	std::ifstream _file1;
+	std::ofstream _file2;
 public:
 	File(const std::string& fileName);
 	~File();
-	void readDataToVector(Employee & vector);
+	void readData();
 	void saveData(Employee& empl);
-	void printVector();
 };
 
 class Employee {
 public:
 	std::string _name, _surname;
 	int _employeeNumber, _salary;
-	std::vector <Employee> vector;
+	static std::vector <Employee> vectorEmpl;
 	Employee(std::string name, std::string surname, int salary);
 };

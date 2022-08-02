@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <numeric>
 int main() {
-    File file("C:\\Users\\jwitu\\OneDrive\\Pulpit\\SDA\\CPPZaawansowanyZad\\employees.txt");
+    File file("C:\\Users\\jwitu\\OneDrive\\Pulpit\\SDA\\CPPZaawansowanyZad\\employee.txt");
 
     Employee e1("Jan", "Kowalski", 4000);
     Employee e2("Joanna", "Nowak", 5000);
