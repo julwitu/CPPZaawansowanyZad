@@ -21,6 +21,7 @@ int main()
     //b)
     if(!fileToWrite.is_open()) {
         std::cout << "Blad w odczycie pliku!" << std::endl;
+        return -1;
     }
     else {
         if (fileToWrite.good()) {
@@ -40,6 +41,7 @@ int main()
     
     if (!fileToRead.is_open()) {
         std::cout << "Nie udalo sie otworzyc pliku" << std::endl;
+        return -1;
     }
     else {
         std::cout << "Plik zostal wczytany" << std::endl;
