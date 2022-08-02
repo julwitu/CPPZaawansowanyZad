@@ -52,6 +52,7 @@ int main()
             fileToRead >> tmp;
             vector.push_back(tmp);
    }
+   fileToRead.close();
    
    //d) /wypisac 100 pierwszych liczb (uzycjie std::advance)
     //sprawdzmy czy w zapisanym pliku te liczby sa w tej samej kolejnosci
