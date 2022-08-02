@@ -2,19 +2,19 @@
 
 #include <iostream>
 #include <regex>
-bool checkEmail(const std::string& input) {
-    std::regex emailRegex("^[a - z0 - 9_.]{3,}@[a - z0 - 9_] + .[a - z]{2,3}$");
-    return std::regex_match(input, emailRegex);
+#include <string>
+bool checkemail(const std::string& input) {
+    std::regex emailregex("^[a-z0-9_.]{3,}@[a-z0-9_]+.(com|pl|edu)$");
+    return std::regex_match(input, emailregex);
 }
 
 int main()
 {
-    std::cout << "Podaj adres email: " << std::endl;
-    std::string input;
+    std::cout << "podaj adres email: " << std::endl;
+    std::string input ="";
     std::cin >> input;
 
-    std::cout << "Zgodny wynik: " << std::endl;
-    checkEmail(input);
+    std::cout << "zgodny wynik: " << std::boolalpha << checkemail(input) << std::endl;
+   
 }
-
 
