@@ -1,0 +1,6 @@
+﻿  Zdania.cpp
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zdania\Zdania.cpp(58,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zdania\Zdania.cpp(59,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zdania\Zdania.cpp(61,20): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zdania\Zdania.cpp(62,20): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Zdania.vcxproj -> C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\x64\Debug\Zdania.exe
