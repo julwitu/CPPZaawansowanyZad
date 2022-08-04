@@ -1,11 +1,2 @@
 ﻿  Zad9.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(1402,1): error C2451: a conditional expression of type 'void' is not valid
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(1402,18): message : Expressions of type void cannot be converted to other types
-C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zad9\Zad9.cpp(13): message : see reference to function template instantiation '_OutIt std::copy_if<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::back_insert_iterator<std::vector<_Ty,std::allocator<_Ty>>>,createNumbers::<lambda_199b5f5e2a5b7a3173889b2aab92b557>>(_InIt,_InIt,_OutIt,_Pr)' being compiled
-          with
-          [
-              _OutIt=std::back_insert_iterator<std::vector<int,std::allocator<int>>>,
-              _Ty=int,
-              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
-              _Pr=createNumbers::<lambda_199b5f5e2a5b7a3173889b2aab92b557>
-          ]
+  Zad9.vcxproj -> C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\x64\Debug\Zad9.exe
