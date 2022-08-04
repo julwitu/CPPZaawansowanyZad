@@ -1,0 +1,3 @@
+﻿  Zad5.cpp
+C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\Zad5\Zad5.cpp(17,21): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  Zad5.vcxproj -> C:\Users\jwitu\OneDrive\Pulpit\SDA\CPPZaawansowanyZad\x64\Debug\Zad5.exe
