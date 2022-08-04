@@ -61,21 +61,16 @@ int main()
     int minLetters = std::min_element(letters.begin(), letters.end()) - letters.begin();
     int maxLetters = std::max_element(letters.begin(), letters.end()) - letters.begin();
     
+
     std::cout << "Wyswietlane tylko pierwsze znalezione zdania odpowiadajace kryteriom mix/max" << std::endl << std::endl;
 
-    std::cout << "Zdanie z najmniejsza iloscia slow: " << vector[minWords] << "// Liczba slow: " << words[minWords] <<  std::endl << std::endl;
-    std::cout << "Zdanie z najwieksza iloscia slow: " << vector[maxWords] << "// Liczba slow: " << words[maxWords] << std::endl << std::endl;
+    std::cout << "Zdanie z najmniejsza iloscia slow: " << vector[minWords] << "  // Liczba slow: " << words[minWords] <<  std::endl << std::endl;
+    std::cout << "Zdanie z najwieksza iloscia slow: " << vector[maxWords] << "  // Liczba slow: " << words[maxWords] << std::endl << std::endl;
   
-    std::cout << "Zdanie z najmniejsza iloscia liter: " << vector[minLetters] << "// Liczba liter: " << letters[minLetters] << std::endl << std::endl;
-    std::cout << "Zdanie z najwieksza iloscia liter: " << vector[maxLetters] << "// Liczba liter: " << letters[maxLetters] << std::endl << std::endl;
+    std::cout << "Zdanie z najmniejsza iloscia liter: " << vector[minLetters] << "  // Liczba liter: " << letters[minLetters] << std::endl << std::endl;
+    std::cout << "Zdanie z najwieksza iloscia liter: " << vector[maxLetters] << "  // Liczba liter: " << letters[maxLetters] << std::endl << std::endl;
 
     std::cout << "Calkowita liczba slow w pliku: " << std::accumulate(words.begin(), words.end(), 0);
 }
 
-//Wypisz na konsolê :
-//-najd³u¿sze zdanie(najwiêcej s³ów)
-//- najd³u¿sze zdanie(najwiêcej liter)
-//- najkrotsze zdanie(najmniej s³ów)
-//- najkrotsze zdanie(najmniej liter)
-//- zlicz wszystkie wyst¹pienia wszystkich s³ów w pliku.
 
