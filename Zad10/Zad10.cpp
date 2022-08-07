@@ -5,7 +5,8 @@
 #include <algorithm>
 #include <vector>
 
-std::vector<std::string> findPermutations(std::string str) {
+std::vector<std::string> findPermutations(int i) {
+    std::string str = std::to_string(i);
     std::vector<std::string>permutations;
     std::sort(str.begin(), str.end());
     do {
@@ -16,6 +17,6 @@ std::vector<std::string> findPermutations(std::string str) {
 }
 int main()
 {
-    findPermutations("524");
+    findPermutations(524);
 }
 
